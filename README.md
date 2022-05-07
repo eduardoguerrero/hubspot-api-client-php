@@ -226,10 +226,10 @@ $properties = [
 $data = $deal->updateById($dealId, $properties);
 ```
 
+---
+
 ### @todo unit test
 
-
----
 Feel free to fork it or do whatever you want with it.
 
 License: https://creativecommons.org/licenses/by/3.0/
