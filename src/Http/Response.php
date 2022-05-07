@@ -2,7 +2,6 @@
 
 namespace HubSpot\Http;
 
-use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 
@@ -228,7 +227,6 @@ class Response implements ResponseInterface
     public function getStatusCode()
     {
         return $this->response->getStatusCode();
-
     }
 
     /**

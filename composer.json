@@ -2,10 +2,12 @@
   "name": "hubspot/api-client",
   "description": "Hubspot api client",
   "require": {
+    "php": ">=5.6",
     "guzzlehttp/guzzle": "~6.0"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^2.16"
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpunit/phpunit": "^9.5"
   },
   "autoload": {
     "psr-4": {

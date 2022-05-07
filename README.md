@@ -9,7 +9,7 @@ HubSpot’s CRM platform has all the tools and integrations you need for marketi
 ```bash
 composer require hubspot/api-client
 ```
-
+---
 ## Contacts
 
 ### Get all contacts
@@ -94,6 +94,7 @@ $properties = [
 ];
 $response = $contact->create($properties);
 ```
+---
 
 ## Deals
 
@@ -224,8 +225,6 @@ $properties = [
 ];
 $data = $deal->updateById($dealId, $properties);
 ```
-
----
 
 ### @todo unit test
 

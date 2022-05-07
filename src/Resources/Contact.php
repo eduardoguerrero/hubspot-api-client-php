@@ -37,7 +37,6 @@ class Contact extends AbstractResource
         return $this->client->request('GET', self::CONTACT_BASE_URI . '/' . $contactId, [], $queryParams);
     }
 
-
     /**
      * Filter, sort, and search CRM Objects.
      *

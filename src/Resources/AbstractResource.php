@@ -24,5 +24,4 @@ abstract class AbstractResource
     {
         $this->client = $client;
     }
-
 }
