@@ -29,7 +29,7 @@ $response = $contact->getAll($queryParams);
 $data = $response->getData();
 ```
 
-## Get contact by id
+### Get contact by id
 
 ```php
 use HubSpot\Http\Client;
@@ -45,7 +45,7 @@ $response = $contact->getById($customerId, $queryParams);
 $data = $response->getData();
 ```
 
-## Get contact by property
+### Get contact by property
 
 ```php
 use HubSpot\Http\Client;
@@ -72,7 +72,7 @@ $response = $contact->getByProperty($options);
 $data = $response->getData();
 ```
 
-#### Create contact
+### Create contact
 
 ```php
 use HubSpot\Http\Client;
@@ -83,12 +83,12 @@ $contact = new Contact($client);
 $properties = [
       'body' => [
          'properties' => [
-             'company' => 'Biglytics',
-             'email' => 'bcooper@biglytics.net',
-             'firstname' => 'Bryan',
-             'lastname' => 'Cooper',
-             'phone' => '(877) 929-0687',
-             'website' => 'biglytics.net'
+             'company' => 'Home',
+             'email' => 'escobarguerrerp@gmail.com',
+             'firstname' => 'René,
+             'lastname' => 'Escobar',
+             'phone' => '(503) 0000-0000',
+             'website' => 'home.net'
          ]
      ]
 ];
@@ -98,7 +98,7 @@ $response = $contact->create($properties);
 
 ## Deals
 
-#### Get all deals
+### Get all deals
 
 ```php
 use HubSpot\Http\Client;
@@ -115,7 +115,7 @@ $response = $deal->getAll($queryParams);
 $data = $response->getData()
 ```
 
-#### Get deal by id
+### Get deal by id
 
 ```php
 use HubSpot\Http\Client;
@@ -131,7 +131,7 @@ $response = $deal->getById($dealId, $queryParams);
 $data = $response->getData()
 ```
 
-#### Create deal
+### Create deal
 
 ```php
 use HubSpot\Http\Client;
@@ -154,7 +154,7 @@ $response = $deal->create($properties);
 $data = $response->getData()
 ```
 
-#### Update deal
+### Update deal
 
 ```php
 use HubSpot\Http\Client;
@@ -179,7 +179,7 @@ $response = $deal->updateById($dealId, $properties);
 $data = $response->getData()
 ```
 
-#### Associate a deal with another object
+### Associate a deal with another object
 
 ```php
 use HubSpot\Http\Client;
@@ -198,7 +198,7 @@ $associate
 $data = $deal->associateWithObject($associate);
 ```
 
-#### Change deal status
+### Change deal status
 
 ```php
 use HubSpot\Http\Client;
