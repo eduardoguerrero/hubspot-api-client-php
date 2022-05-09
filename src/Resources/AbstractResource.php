@@ -17,7 +17,6 @@ abstract class AbstractResource
     protected $client;
 
     /**
-     * AbstractResource constructor.
      * @param $client
      */
     public function __construct($client)

@@ -2,7 +2,6 @@
 
 namespace HubSpot\Resources;
 
-use GuzzleHttp\Exception\GuzzleException;
 use HubSpot\Http\Response;
 use HubSpot\Model\AssociateDeal;
 
@@ -16,10 +15,11 @@ class Deal extends AbstractResource
 {
 
     /**
-     * Read a page of deals. Control what is returned via the properties query param.
+     * Read a page of deals. Control what is returned via the properties query param
      *
      * @param array $queryParams
      * @return Response
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getAll(array $queryParams)
     {
@@ -28,11 +28,12 @@ class Deal extends AbstractResource
 
     /**
      * Read an Object identified by {dealId}. {dealId} refers to the internal object ID by default, or optionally any
-     * unique property value as specified by the idProperty query param.
+     * unique property value as specified by the idProperty query param
      *
      * @param $dealId
      * @param array $queryParams
      * @return Response
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function getById($dealId, array $queryParams)
     {
@@ -40,10 +41,11 @@ class Deal extends AbstractResource
     }
 
     /**
-     * Create a deal with the given properties and return a copy of the object, including the ID.
+     * Create a deal with the given properties and return a copy of the object, including the Id
      *
      * @param array $properties
      * @return Response
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function create(array $properties)
     {
@@ -51,11 +53,12 @@ class Deal extends AbstractResource
     }
 
     /**
-     * Perform a partial update of an Object identified by {dealId}.
+     * Perform a partial update of an Object identified by {dealId}
      *
      * @param $dealId
      * @param array $properties
      * @return Response
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function updateById($dealId, array $properties)
     {
@@ -67,6 +70,7 @@ class Deal extends AbstractResource
      *
      * @param AssociateDeal $associateDeal
      * @return Response
+     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function associateWithObject(AssociateDeal $associateDeal)
     {

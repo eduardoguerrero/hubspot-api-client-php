@@ -66,11 +66,12 @@ class Client
     /**
      * Execute a request to hubspot API.
      *
-     * @param $method The HTTP request verb
-     * @param $uri The Hubspot API uri
+     * @param string $method The HTTP request verb
+     * @param string $uri The Hubspot API uri
      * @param array $options An array of options to send with the request
-     * @param array $queryParams Query params
+     * @param array $queryParams $queryParams Query params
      * @return Response
+     * @throws GuzzleException
      */
     public function request($method, $uri, array $options = [], array $queryParams = [])
     {
